@@ -62,3 +62,8 @@ class TwoLayerNet:
     for layer in self.layers:
       x = layer.forward(x)
     return x
+
+x = np.random.randn(10, 2)
+model = TwoLayerNet(2, 4, 3)
+s = model.predict(x)
+print(s)
